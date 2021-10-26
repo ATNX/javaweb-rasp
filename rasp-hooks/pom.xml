@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.javaweb.rasp</groupId>
+        <artifactId>javaweb-rasp</artifactId>
+        <version>3.0.3</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>rasp-hooks</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.javaweb.rasp</groupId>
+            <artifactId>rasp-agent-commons</artifactId>
+            <version>${project.parent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.javaweb.rasp</groupId>
+            <artifactId>rasp-loader-commons</artifactId>
+            <version>${project.parent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <modules>
+        <module>rasp-hook-cmd</module>
+    </modules>
+
+</project>
